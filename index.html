@@ -42,7 +42,6 @@
 
   .hero{position:relative;background:radial-gradient(ellipse at 75% 20%, #241a16 0%, var(--ink) 60%);color:#fff;padding:170px 0 120px;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 92%,0 100%);}
   .hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;gap:26px;max-width:680px;}
-  .hero-logo{position:relative;left:90px;top:400px;transform:translateY(-50%);width:320px;height:auto;}
   .hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08;font-weight:600;}
   .hero h1 span{color:var(--red);}
   .hero p.lead{color:var(--silver);font-size:1.08rem;max-width:520px;}
@@ -134,7 +133,7 @@
 
 <header>
   <div class="navbar">
-    <div class="brand"><img src="https://raw.githubusercontent.com/depesh-cloud/Chentools-Solutions/782fbcf1f15002d783d7581d6fa942b12651142c/chentools-logo.jpeg" alt="Chentools Solutions Logo" style="height:40px;width:auto;border-radius:3px;"> CHENTOOLS SOLUTIONS</div>
+    <div class="brand"><img src="https://raw.githubusercontent.com/depesh-cloud/Chentools-Solutions/bafde2446f82304125d5d6d3436c695fa152d156/chentools-logo.jpeg" alt="Chentools Solutions Logo" style="height:40px;width:auto;border-radius:3px;"> CHENTOOLS SOLUTIONS</div>
     <nav class="links">
       <a href="#about">About</a>
       <a href="#founder">Founder</a>
@@ -154,19 +153,25 @@
     <path d="M100 90 L130 130 L100 170 L70 130 Z" stroke="#C9C2BC" stroke-width="2" opacity="0.5"/>
     <path d="M40 60 L60 90 L40 120 L20 90 Z" stroke="#9E0F1C" stroke-width="2" opacity="0.6"/>
   </svg>
-  <div class="wrap">
-    <img src="chentools-logo.jpeg" class="hero-logo">
-    <div class="eyebrow">Authorized Distributor · Chennai, Tamil Nadu</div>
-    <h1>Genuine Mitsubishi cutting tools, <span>delivered</span> in Chennai.</h1>
-    <p class="lead">Chentools Solutions supplies genuine Mitsubishi Materials cutting tools to Tamil Nadu's manufacturing floor — solid carbide end mills, indexable milling &amp; turning tools, drills and threading tools, backed by local stock and technical support.</p>
-    <div class="stats">
-      <div><span class="num">100%</span><span class="lab">Genuine Mitsubishi Tooling</span></div>
-      <div><span class="num">9+</span><span class="lab">Industries Served</span></div>
-      <div><span class="num">1</span><span class="lab">Local Point of Contact</span></div>
+  <div class="wrap" style="display:flex;align-items:center;gap:48px;max-width:1120px;">
+    <div style="flex:0 0 auto;display:none;" class="hero-logo-col">
+      <div style="width:220px;height:220px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:24px;box-shadow:0 8px 30px rgba(0,0,0,0.35);">
+        <img src="https://raw.githubusercontent.com/depesh-cloud/Chentools-Solutions/bafde2446f82304125d5d6d3436c695fa152d156/chentools-logo.jpeg" alt="Chentools Solutions" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;">
+      </div>
     </div>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">Request a Quote</a>
-      <a href="#products" class="btn-ghost">View Product Range</a>
+    <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:26px;max-width:680px;">
+      <div class="eyebrow" style="margin-bottom:0;">Authorized Distributor · Chennai, Tamil Nadu</div>
+      <h1>Genuine Mitsubishi cutting tools, <span>delivered</span> in Chennai.</h1>
+      <p class="lead">Chentools Solutions supplies genuine Mitsubishi Materials cutting tools to Tamil Nadu's manufacturing floor — solid carbide end mills, indexable milling &amp; turning tools, drills and threading tools, backed by local stock and technical support.</p>
+      <div class="stats">
+        <div><span class="num">100%</span><span class="lab">Genuine Mitsubishi Tooling</span></div>
+        <div><span class="num">9+</span><span class="lab">Industries Served</span></div>
+        <div><span class="num">1</span><span class="lab">Local Point of Contact</span></div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">Request a Quote</a>
+        <a href="#products" class="btn-ghost">View Product Range</a>
+      </div>
     </div>
   </div>
 </section>
