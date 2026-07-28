@@ -41,7 +41,10 @@
   .menu-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;}
 
   .hero{position:relative;background:radial-gradient(ellipse at 75% 20%, #241a16 0%, var(--ink) 60%);color:#fff;padding:170px 0 120px;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 92%,0 100%);}
-  .hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;gap:26px;max-width:680px;}
+  .hero .wrap{position:relative;z-index:2;}
+  .hero-content{display:flex;align-items:center;justify-content:space-between;gap:80px;max-width:1200px;margin-left:40px;}
+  .hero-logo{flex:0 0 360px;display:flex;justify-content:center;align-items:center;margin-left:40px;}
+  .hero-logo img{width:320px;height:auto;border-radius:4px;}
   .hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08;font-weight:600;}
   .hero h1 span{color:var(--red);}
   .hero p.lead{color:var(--silver);font-size:1.08rem;max-width:520px;}
@@ -226,7 +229,10 @@
 </section>
 
 <section id="founder" style="background:#fff;padding-top:0;">
-  <div class="wrap">
+  <div class="wrap hero-content">
+  <div class="hero-logo">
+    <img src="https://raw.githubusercontent.com/shantechraja-bit/Chentools-Solutions/7d2b41ccc71815f9bd2b3aac8290805bfcbb2b5b/chentools-logo.jpeg">
+  </div>
     <div class="sec-head">
       <div class="eyebrow">About The Founder</div>
       <h2>Led by experience, built on trust</h2>
